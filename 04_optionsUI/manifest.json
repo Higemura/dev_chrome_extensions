@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Change Background Color with Options UI",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": {
+            "16": "icon.png"
+        }
+    },
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
+    "background": {
+        "scripts": [
+            "event.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}
